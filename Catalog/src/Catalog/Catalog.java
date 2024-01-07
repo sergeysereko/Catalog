@@ -4,7 +4,8 @@ import Interfaces.LibraryCatalog;
 import LiteraryWorks.*;
 import java.util.ArrayList;
 import java.util.List;
-
+import Interfaces.CatalogSerializer;
+import java.io.*;
 
 
 // Реализация интерфейсного класса
@@ -70,6 +71,15 @@ public class Catalog implements LibraryCatalog {
                 }
             }
             return results;
+        }
+        @Override
+        public void saveCatalog(CatalogSerializer serializer, String filePath) throws IOException {
+            serializer.serializeCatalog(catalog, filePath);
+        }
+
+        @Override
+        public void loadCatalog(CatalogSerializer serializer, String filePath) throws IOException, ClassNotFoundException {
+            catalog = serializer.deserializeCatalog(filePath);
         }
 }
 

@@ -4,7 +4,7 @@ import java.io.*;
 import AbstractClass.LiteraryWork;
 
 public interface CatalogSerializer {
-    void serializeCatalog(List<LiteraryWork> catalog, String filePath) throws IOException;
+    void serializeCatalog(List<?> catalog, String filePath) throws IOException;
 
     List<LiteraryWork> deserializeCatalog(String filePath) throws IOException, ClassNotFoundException;
 }
