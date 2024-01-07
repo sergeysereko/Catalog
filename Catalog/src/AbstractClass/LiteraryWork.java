@@ -2,7 +2,7 @@ package AbstractClass;
 
 // Абстрактный класс для литературных произведений
 public abstract class LiteraryWork {
-    protected String title;
+    public String title;
 
     public LiteraryWork(String title) {
         this.title = title;

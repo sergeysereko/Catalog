@@ -3,7 +3,7 @@ import AbstractClass.LiteraryWork;
 import java.util.List;
 
 // Класс для альманаха
-class Anthology extends LiteraryWork {
+public class Anthology extends LiteraryWork {
     private List<Book> works;
 
     public Anthology(String title, List<Book> works) {

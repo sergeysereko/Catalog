@@ -3,7 +3,7 @@ import AbstractClass.LiteraryWork;
 import java.util.List;
 
 
-class Newspaper extends LiteraryWork {
+public class Newspaper extends LiteraryWork {
     private String releaseDate;
     private List<String> headlines;
 

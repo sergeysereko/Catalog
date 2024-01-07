@@ -2,7 +2,7 @@
 package LiteraryWorks;
 import AbstractClass.LiteraryWork;
 
-class Book extends LiteraryWork {
+public class Book extends LiteraryWork {
     private String author;
     private String genre;
     private int pageCount;
