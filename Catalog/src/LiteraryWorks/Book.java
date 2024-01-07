@@ -2,7 +2,9 @@
 package LiteraryWorks;
 import AbstractClass.LiteraryWork;
 
-public class Book extends LiteraryWork {
+import java.io.Serializable;
+
+public class Book extends LiteraryWork implements Serializable {
     private String author;
     private String genre;
     private int pageCount;

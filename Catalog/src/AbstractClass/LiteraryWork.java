@@ -1,7 +1,8 @@
 package AbstractClass;
+import java.io.Serializable;
 
 // Абстрактный класс для литературных произведений
-public abstract class LiteraryWork {
+public abstract class LiteraryWork implements Serializable{
     public String title;
 
     public LiteraryWork(String title) {

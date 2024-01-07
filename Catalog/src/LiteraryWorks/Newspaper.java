@@ -1,9 +1,11 @@
 package LiteraryWorks;
 import AbstractClass.LiteraryWork;
+
+import java.io.Serializable;
 import java.util.List;
 
 
-public class Newspaper extends LiteraryWork {
+public class Newspaper extends LiteraryWork implements Serializable {
     private String releaseDate;
     private List<String> headlines;
 

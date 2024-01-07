@@ -1,9 +1,10 @@
 package LiteraryWorks;
 import AbstractClass.LiteraryWork;
 import java.util.List;
+import java.io.Serializable;
 
 // Класс для альманаха
-public class Anthology extends LiteraryWork {
+public class Anthology extends LiteraryWork implements Serializable {
     private List<Book> works;
 
     public Anthology(String title, List<Book> works) {
