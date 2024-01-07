@@ -1,7 +1,7 @@
 package AbstractClass;
 
 // Абстрактный класс для литературных произведений
-abstract class LiteraryWork {
+public abstract class LiteraryWork {
     protected String title;
 
     public LiteraryWork(String title) {
@@ -10,4 +10,11 @@ abstract class LiteraryWork {
 
     // метод для вывода информации о произведении
     public abstract void displayInfo();
+
+    @Override
+    public String toString() {
+        return "LiteraryWork{" +
+                "title='" + title + '\'' +
+                '}';
+    }
 }
